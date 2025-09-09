@@ -44,3 +44,11 @@ sudo mv wallpapers /opt/
 sudo rm -rf nvim wallpapers yazi base.toml .zshrc nekoray nekobox beep.mp3
 
 sudo sed -i '/^#Color/s/^#//; /^Color/a ILoveCandy' /etc/pacman.conf
+
+sudo mkdir /root/.config
+
+sudo ln -s $USERHOME/.config/nvim /root/.config/nvim
+
+sudo ln -s $USERHOME/.zshrc /root/.zshrc
+
+sudo ln -s $USERHOME/.pt /root/.pt
