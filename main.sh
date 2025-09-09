@@ -11,7 +11,7 @@ yayinstall() {
 	makepkg -si
 }
 
-sudo pacman -Syu git curl wget hyprland kitty rofi waybar mako swaylock swayidle hyprpaper xdg-desktop-portal-hyprland zsh zoxide fd ripgrep bat gping thefuck tealdeer neovim btop tgpt 7zip jq poppler fzf resvg imagemagick npm wl-clipboard mpv ttf-jetbrains-mono-nerd yazi lsd
+sudo pacman -Syu git curl wget hyprland kitty rofi waybar mako swaylock swayidle hyprpaper xdg-desktop-portal-hyprland zsh zoxide fd ripgrep bat gping thefuck tealdeer neovim btop tgpt 7zip jq poppler fzf resvg imagemagick npm wl-clipboard mpv ttf-jetbrains-mono-nerd yazi lsd unzip
 
 yayinstall
 
@@ -42,3 +42,5 @@ sudo mv kitty.conf $USERHOME/.config/kitty/
 sudo mv wallpapers /opt/
 
 sudo rm -rf nvim wallpapers yazi base.toml .zshrc nekoray nekobox beep.mp3
+
+sudo sed -i '/^#Color/s/^#//; /^Color/a ILoveCandy' /etc/pacman.conf
