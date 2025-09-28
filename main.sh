@@ -11,7 +11,7 @@ yayinstall() {
 	makepkg -si
 }
 
-sudo pacman -Syu git curl wget hyprland kitty rofi waybar hyprpaper xdg-desktop-portal-hyprland zsh zoxide fd ripgrep bat gping thefuck tealdeer neovim btop tgpt 7zip jq poppler fzf resvg imagemagick npm wl-clipboard mpv ttf-jetbrains-mono-nerd yazi lsd unzip
+sudo pacman -Syu git curl wget hyprland kitty rofi waybar hyprpaper xdg-desktop-portal-hyprland zsh zoxide fd ripgrep bat gping thefuck tealdeer neovim btop tgpt 7zip jq poppler fzf resvg imagemagick npm wl-clipboard mpv ttf-jetbrains-mono-nerd yazi lsd unzip yt-dlp mpd mpc rmpc sox swaync lua love gcc ntfs-3g mupdf gutenprint foomatic-db cups cups-filters cups-pdf ghostscript cliphist wl-copy wl-paste
 
 yayinstall
 
@@ -47,16 +47,32 @@ sudo mkdir /root/.config
 
 sudo mv -f sddm.conf /etc/
 
-sudo ln -s $USERHOME/.config/nvim /root/.config/nvim
+sudo ln -sf $USERHOME/.config/nvim /root/.config/nvim
 
-sudo ln -s $USERHOME/.zshrc /root/.zshrc
+sudo ln -sf $USERHOME/.zshrc /root/.zshrc
 
-sudo ln -s $USERHOME/.pt /root/.pt
+sudo ln -sf $USERHOME/.pt /root/.pt
+
+sudo mv -f waybar $USERHOME/.config/
+
+sudo mv -f hypr $USERHOME/.config/
 
 sudo mv -f where_is_my_sddm_theme /usr/share/sddm/themes/
+
+sudo mv -f cava $USERHOME/.config/
+
+sudo mv -f clipboard ytmd /usr/bin/
+
+sudo chmod +x /usr/bin/ytmd
+
+sudo chmod +x /usr/bin/clipboard
+
+sudo mkdir -p $USERHOME/.config/mpd
+
+sudo mv -f mpd.conf $USERHOME/.config/mpd/
 
 sudo chown -R root:root /usr/share/sddm/themes/where_is_my_sddm_theme
 
 sudo chmod -R 755 /usr/share/sddm/themes/where_is_my_sddm_theme
 
-sudo rm -rf nvim wallpapers yazi base.toml .zshrc nekoray nekobox beep.mp3 hyprpaper.conf where_is_my_sddm_theme sddm.conf
+sudo rm -rf nvim wallpapers yazi base.toml .zshrc beep.mp3 hypr where_is_my_sddm_theme sddm.conf kitty.conf waybar cava mpd.conf ytmd clipboard
