@@ -32,8 +32,6 @@ sudo mkdir $USERHOME/.zsh
 
 sudo mkdir -p $USERHOME/.local/share/fcitx5/themes/
 
-sudo mkdir -p $USERHOME/.config/fcitx5/conf/
-
 sudo mkdir $USERHOME/.config/mpd
 
 sudo mv -f base.toml $USERHOME/.pt/
@@ -42,9 +40,7 @@ sudo mv -f beep.mp3 /opt/
 
 sudo mv -f .zshrc $USERHOME/
 
-sudo mv -f profile $USERHOME/.config/fcitx5/
-
-sudo mv -f kitty nvim yazi waybar btop hypr cava lsd $USERHOME/.config/
+sudo mv -f fcitx5 kitty nvim yazi waybar btop hypr cava lsd $USERHOME/.config/
 
 sudo mv -f tux.png pacman.png /opt/
 
@@ -55,8 +51,6 @@ sudo mv -f sddm.conf /etc/
 sudo mv -f catppuccin-mocha-mauve $USERHOME/.local/share/fcitx5/themes/
 
 sudo mv -f where_is_my_sddm_theme /usr/share/sddm/themes/
-
-sudo mv -f classicui.conf $USERHOME/.config/fcitx5/conf/
 
 sudo mv -f clipboard ytmd /usr/bin/
 
@@ -80,7 +74,7 @@ sudo chown -R root:root /usr/share/sddm/themes/where_is_my_sddm_theme
 
 sudo chmod -R 755 /usr/share/sddm/themes/where_is_my_sddm_theme
 
-sudo rm -rf nvim tux.png pacman.png yazi base.toml .zshrc beep.mp3 hypr where_is_my_sddm_theme sddm.conf kitty.conf waybar cava mpd.conf ytmd clipboard catppuccin-theme-mocha btop lsd catppuccin-mocha-mauve classicui.conf
+sudo rm -rf nvim tux.png pacman.png yazi base.toml .zshrc beep.mp3 hypr where_is_my_sddm_theme sddm.conf kitty.conf waybar cava mpd.conf ytmd clipboard catppuccin-theme-mocha btop lsd catppuccin-mocha-mauve fcitx5
 
 clear
 
