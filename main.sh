@@ -40,7 +40,7 @@ sudo mv -f beep.mp3 /opt/
 
 sudo mv -f .zshrc $USERHOME/
 
-sudo mv -f fcitx5 kitty nvim yazi waybar btop hypr cava lsd swaync $USERHOME/.config/
+sudo mv -f fcitx5 kitty nvim yazi waybar btop hypr cava lsd swaync lazygit $USERHOME/.config/
 
 sudo mv -f tux.png pacman.png /opt/
 
@@ -76,7 +76,7 @@ sudo chmod -R 755 /usr/share/sddm/themes/where_is_my_sddm_theme
 
 sudo systemctl enable --now keyd
 
-sudo rm -rf nvim tux.png pacman.png yazi base.toml .zshrc beep.mp3 hypr where_is_my_sddm_theme sddm.conf kitty.conf waybar cava mpd.conf ytmd clipboard catppuccin-theme-mocha btop lsd catppuccin-mocha-mauve fcitx5 keyd swaync
+sudo rm -rf nvim tux.png pacman.png yazi base.toml .zshrc beep.mp3 hypr where_is_my_sddm_theme sddm.conf kitty.conf waybar cava mpd.conf ytmd clipboard catppuccin-theme-mocha btop lsd catppuccin-mocha-mauve fcitx5 keyd swaync lazygit
 
 clear
 
